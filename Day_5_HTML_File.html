@@ -23,41 +23,37 @@
         <footer id="footer">
             <p> Footer content in here</p>
         </footer>
-        <button onclick="myFunction()">Try it</button>
     </div>
-<script>
-    function myFunction() {
-        alert("I am an alert box!");
-    }
-    
+    <script type="text/javascript">
     document.getElementById('title').onmouseenter = function()
     {
-        this.style.color = 'purple';
+        this.style.backgroundColor = 'purple';
     };
     document.getElementById('title').onmouseleave = function() {
         this.style.backgroundColor = 'green'; 
     };
 
-    //Here comes my code
+    //My challange code
     document.getElementById('footer').onmouseenter = function() {
-        this.style.backgroundColor = 'yellow'; 
+        this.style.backgroundColor = 'yellow';
+        this.style.width = '100%'; // for my challange code 
     }; 
     document.getElementById('footer').onmouseleave = function() { 
         this.style.backgroundColor = 'red'; 
     };
 
-    //My challange code
-    document.getElementById('footer').onmouseclick = function() { 
-        if (this.style.width > 10) {
-            this.style.width = this.style.width -10%;
+    document.getElementById('footer').onclick = function() {
+        stringWidth = this.style.width;
+        realWidth = parseInt(stringWidth.replace('%',''));
+        if (realWidth <= 30) {
+            this.style.width = '100%';
         } 
         else {
-            this.style.width = 100%;
+            realWidth = realWidth - 10
+            stringWidth = realWidth.toString()
+            this.style.width = stringWidth + '%';
         } 
     };
-    document.getElementById('footer').onmousedoubleclick = function() { 
-        this.style.width = 200%; 
-    }; 
-</script>
+    </script>
 </body>
 </html>
