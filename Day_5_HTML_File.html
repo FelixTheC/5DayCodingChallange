@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Semantic Page</title>
+
+    <link rel="stylesheet" type="text/css" href="Day_5_CSS_File.css">
+</head>
+<body>
+    <div id="container">
+        <header id="title">
+            <noscript>Please activate Javascript</noscript>
+            <h1>My Page Title</h1>
+        </header>
+        <aside>
+            <p>Migas shabby chic bitters keytar occupy kinfolk. Pug gochujang heirloom cornhole sustainable single-origin coffee crucifix organic fashion axe, tumeric polaroid trust fund vegan tattooed.
+            </p>
+        </aside>
+        <article>
+            <h2>My Article Header</h2>
+            <p> Pop-up fashion axe iPhone, tumblr put a bird on it lumberjack sartorial. Keytar coloring book plaid, marfa unicorn gluten-free affogato gastropub synth. Quinoa before they sold out sustainable, kinfolk bicycle rights XOXO yuccie craft beer cred asymmetrical hell of synth. Portland messenger bag aesthetic, kinfolk kogi try-hard cardigan. Raclette venmo forage disrupt cred bitters. Mustache sustainable XOXO, williamsburg meditation wayfarers distillery thundercats unicorn truffaut occupy twee four dollar toast irony. Green juice tumeric la croix thundercats scenester af
+            </p>
+        </article>
+        <footer id="footer">
+            <p> Footer content in here</p>
+        </footer>
+        <button onclick="myFunction()">Try it</button>
+    </div>
+<script>
+    function myFunction() {
+        alert("I am an alert box!");
+    }
+    
+    document.getElementById('title').onmouseenter = function()
+    {
+        this.style.color = 'purple';
+    };
+    document.getElementById('title').onmouseleave = function() {
+        this.style.backgroundColor = 'green'; 
+    };
+
+    //Here comes my code
+    document.getElementById('footer').onmouseenter = function() {
+        this.style.backgroundColor = 'yellow'; 
+    }; 
+    document.getElementById('footer').onmouseleave = function() { 
+        this.style.backgroundColor = 'red'; 
+    };
+
+    //My challange code
+    document.getElementById('footer').onmouseclick = function() { 
+        if (this.style.width > 10) {
+            this.style.width = this.style.width -10%;
+        } 
+        else {
+            this.style.width = 100%;
+        } 
+    };
+    document.getElementById('footer').onmousedoubleclick = function() { 
+        this.style.width = 200%; 
+    }; 
+</script>
+</body>
+</html>

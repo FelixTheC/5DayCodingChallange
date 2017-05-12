@@ -1,0 +1,55 @@
+header, aside, article, footer{
+  color: black;
+  float: left;
+}
+
+h1, h2, p {
+
+  margin: 2.5%;
+}
+
+#container {
+  font-family: helvetica;
+	background-color: #ffffff;
+	width: 960px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #25FF26;
+	width: 100%;
+}
+
+aside {
+ 	background-color: #FFD320;
+ 	clear:left;
+ 	width: 20%;
+}
+
+article {
+	background-color: #FF5710;
+	width: 80%;
+	height: 400px;
+}
+
+footer {
+	background-color: #E8281A;
+	width: 100%;
+}
+@media screen and (max-width: 960px) {
+	body{ 
+		margin: 0;
+	}
+	#container {
+		width: 100%;
+	}
+	header{
+		background-color: #E8281A !important
+	}
+}
+@media screen and (max-width: 600px) {
+header, aside, article, footer {
+	float: none;width: 100%;padding: 15px 0 15px 0;
+	}
+}

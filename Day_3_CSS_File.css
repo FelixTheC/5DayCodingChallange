@@ -1,0 +1,60 @@
+header, aside, article, footer{
+	color: #000000;
+	float:left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#container {
+	font-family: helvetica;
+	background-color: #ffffff;
+	width: 960px;
+	height: 500px;
+	margin: 0 auto;
+
+}
+
+header {
+	color: #ffffff;
+	background: repeating-radial-gradient(#000000, #ffffff);
+	text-align: center;
+	box-shadow: 0 6px 3px #000000;
+	width: calc(100% - 30px);
+}
+
+body {
+	background: #6396FF;
+	background: -webkit-linear-gradient(right, #A31278, #BA8A27);
+	background: -moz-linear-gradient(right, #A31278, #BA8A27);
+	background: linear-gradient(right, #A31278, #BA8A27);
+}
+
+aside {
+ 	background: #fff000;
+	background: -webkit-linear-gradient(right,#A31278, #fff000);
+	background: -moz-linear-gradient(right,#A31278, #fff000);
+	background: linear-gradient(right,#A31278, #fff000);
+ 	clear:left;
+ 	box-shadow: 2px 6px;
+ 	width: calc(20% - 30px);
+ 	height: 80%;
+}
+
+article {
+	color: #000000;
+	font-weight: bold;
+	background: url('https://www.codeinstitute.net/wp-content/uploads/2017/01/2nd-Try-300x132.png'), center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: calc(80% - 30px);
+	height: 400px;
+}
+
+footer{
+	background: repeating-radial-gradient(#ffffff, #000000, #ffffff);
+	text-align: center;
+	text-shadow: 1px 1px;
+	width: 100%;
+	width: calc(100% - 30px);
+}
